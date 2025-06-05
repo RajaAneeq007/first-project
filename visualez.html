@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        dark: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+<!-- header starts here --> 
+<header>
+<div class="bg-[#3295DC] p-[12px] flex justify-center item bg-">
+    <a href="#" class="inline-flex">
+        <p class="text-[#fff] text-[18px] sm:text-[15px]">GET A FREE Sample View</p>
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/right-arrow-Vector.svg" alt="right-arrow" class="ml-2.5 w-[24px] mb-[-2px]">
+    </a>
+</div>
+<div class="flex justify-between items-center w-[1180px] mx-auto border-b border-white bg-white/70 backdrop-blur-[15.2px]">
+    <div class="">
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/logo.png" alt="logo">
+    </div>
+    <!-- Container -->
+    <nav class="bg-white/70 backdrop-blur-[15.2px] border-b border-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+
+        <!-- Hamburger (mobile) -->
+        <div class="md:hidden">
+            <button id="menuToggle" class="text-gray-800 focus:outline-none">
+            ☰
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <ul id="menuItems" class="hidden md:flex space-x-6 items-center text-gray-800">
+            <li class="hover:text-blue-600 cursor-pointer">Home</li>
+            <li class="hover:text-blue-600 cursor-pointer">About</li>
+            <li class="hover:text-blue-600 cursor-pointer">Services</li>
+            <li class="hover:text-blue-600 cursor-pointer">Pricing</li>
+            <li class="hover:text-blue-600 cursor-pointer">Contact</li>
+            <li class="flex items-center gap-1 text-blue-600 font-semibold cursor-pointer">
+            Get Started
+            <img src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202.svg" alt="right-arrow-box" class="w-4 h-4">
+            </li>
+        </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 text-gray-800">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li class="flex items-center gap-1 text-blue-600 font-semibold">
+            Get Started
+            <img src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202.svg" alt="right-arrow-box" class="w-4 h-4">
+        </li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Toggle Script -->
+    <script>
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenu.classList.toggle('hidden');
+    });
+    </script>
+
+</div>
+</header> 
+<!-- header ends here -->
+
+<!-- content starts here -->
+<content> 
+<div>
+    <div>
+        <h1>
+            Get <span>360°</span> views of your <span>Flooring</span>
+        </h1>
+        <p>In the competitive tile, flooring, and quartz industry, capturing your customers' attention and providing them with an immersive product experience is crucial. Our innovative QR code technology and 360-degree views are designed to elevate your product visuals both in-store and on your website, making it easier for customers to make informed decisions.</p>
+        <a href="#">Get a free sample view <img src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202%20(1).svg" alt="right-arrow-box-lite"></a>
+    </div>
+    <div>
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/Rectangle%209.jpg" alt="first section right image">
+    </div>
+</div>
+<div>
+    <div>
+        <h2>Loved By <span>40+ Brands</span></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry,  the industry's standard dummy o make a type specimen book.</p>
+    </div>
+    <div>
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/download%204.png">
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/download%205.png">
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/grancier-9f8b6556%201.png">
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/lavish-3a55e035%201.png">
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/lioli-171acb9f%201.png">
+        <img src="file:///C:/Users/TLS/Desktop/visualez/media/qutone-dd51456f%201.png">
+    </div>
+</div>
+<div>
+    <div>
+        <h2>Checkout <span>our Demos</span></h2>
+        <p>We help your customers quickly select products with AI-based Aspirational 360° views.</p>
+    </div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <div>
+                        <p><em>Flooring 360° view</em></p>
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <img src="" alt="Flooring">
+                    </div>
+                    <div>
+                        <span>Flooring</span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="" alt="Tiles">
+                    </div>
+                    <div>
+                        <span>Tiles</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="" alt="Carpet">
+                    </div>
+                    <div>
+                        <span>Carpet</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="" alt="Quartz">
+                    </div>
+                    <div>
+                        <span>Quartz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</content>
+<!-- content ends here -->
+
+<!-- footer starts here -->
+<footer>
+</footer>
+<!-- footer ends here -->
+</body>
+</html>
+
+
