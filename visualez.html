@@ -1,204 +1,357 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SaaS Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#10b981',
-                            600: '#059669',
-                            700: '#047857',
-                        },
-                        dark: {
-                            800: '#1e293b',
-                            900: '#0f172a',
-                        }
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              primary: {
+                50: "#f0fdf4",
+                100: "#dcfce7",
+                500: "#10b981",
+                600: "#059669",
+                700: "#047857",
+              },
+              dark: {
+                800: "#1e293b",
+                900: "#0f172a",
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
     </style>
-</head>
-<body>
-<!-- header starts here --> 
-<header>
-<div class="bg-[#3295DC] p-[12px] flex justify-center item bg-">
-    <a href="#" class="inline-flex">
-        <p class="text-[#fff] text-[18px] sm:text-[15px]">GET A FREE Sample View</p>
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/right-arrow-Vector.svg" alt="right-arrow" class="ml-2.5 w-[24px] mb-[-2px]">
-    </a>
-</div>
-<div class="flex justify-between items-center w-[1180px] mx-auto border-b border-white bg-white/70 backdrop-blur-[15.2px]">
-    <div class="">
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/logo.png" alt="logo">
-    </div>
-    <!-- Container -->
-    <nav class="bg-white/70 backdrop-blur-[15.2px] border-b border-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-
-        <!-- Hamburger (mobile) -->
-        <div class="md:hidden">
-            <button id="menuToggle" class="text-gray-800 focus:outline-none">
-            ☰
-            </button>
+  </head>
+  <body>
+    <!-- header starts here -->
+    <header>
+      <div class="bg-[#3295DC] p-[12px] flex justify-center item bg-">
+        <a href="#" class="inline-flex">
+          <p class="text-[#fff] text-[18px] sm:text-[15px]">
+            GET A FREE Sample View
+          </p>
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/right-arrow-Vector.svg"
+            alt="right-arrow"
+            class="ml-2.5 w-[24px] mb-[-2px]"
+          />
+        </a>
+      </div>
+      <div
+        class="flex justify-between items-center w-[1180px] mx-auto border-b border-white bg-white/70 backdrop-blur-[15.2px]"
+      >
+        <div class="">
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/logo.png"
+            alt="logo"
+          />
         </div>
+        <!-- Container -->
+        <nav class="bg-white/70 backdrop-blur-[15.2px] border-b border-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+              <!-- Hamburger (mobile) -->
+              <div class="md:hidden">
+                <button
+                  id="menuToggle"
+                  class="text-gray-800 focus:outline-none"
+                >
+                  ☰
+                </button>
+              </div>
 
-        <!-- Menu Items -->
-        <ul id="menuItems" class="hidden md:flex space-x-6 items-center text-gray-800">
-            <li class="hover:text-blue-600 cursor-pointer">Home</li>
-            <li class="hover:text-blue-600 cursor-pointer">About</li>
-            <li class="hover:text-blue-600 cursor-pointer">Services</li>
-            <li class="hover:text-blue-600 cursor-pointer">Pricing</li>
-            <li class="hover:text-blue-600 cursor-pointer">Contact</li>
-            <li class="flex items-center gap-1 text-blue-600 font-semibold cursor-pointer">
-            Get Started
-            <img src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202.svg" alt="right-arrow-box" class="w-4 h-4">
-            </li>
-        </ul>
-        </div>
+              <!-- Menu Items -->
+              <ul
+                id="menuItems"
+                class="hidden md:flex space-x-6 items-center text-gray-800"
+              >
+                <li class="hover:text-blue-600 cursor-pointer">Home</li>
+                <li class="hover:text-blue-600 cursor-pointer">About</li>
+                <li class="hover:text-blue-600 cursor-pointer">Services</li>
+                <li class="hover:text-blue-600 cursor-pointer">Pricing</li>
+                <li class="hover:text-blue-600 cursor-pointer">Contact</li>
+                <li
+                  class="flex items-center gap-1 text-blue-600 font-semibold cursor-pointer"
+                >
+                  Get Started
+                  <img
+                    src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202.svg"
+                    alt="right-arrow-box"
+                    class="w-4 h-4"
+                  />
+                </li>
+              </ul>
+            </div>
 
-        <!-- Mobile Menu -->
-        <ul id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 text-gray-800">
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Pricing</li>
-        <li>Contact</li>
-        <li class="flex items-center gap-1 text-blue-600 font-semibold">
-            Get Started
-            <img src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202.svg" alt="right-arrow-box" class="w-4 h-4">
-        </li>
-        </ul>
-    </div>
-    </nav>
+            <!-- Mobile Menu -->
+            <ul
+              id="mobileMenu"
+              class="md:hidden hidden flex-col space-y-4 mt-4 text-gray-800"
+            >
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+              <li class="flex items-center gap-1 text-blue-600 font-semibold">
+                Get Started
+                <img
+                  src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202.svg"
+                  alt="right-arrow-box"
+                  class="w-4 h-4"
+                />
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-    <!-- Toggle Script -->
-    <script>
-    document.getElementById('menuToggle').addEventListener('click', function () {
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileMenu.classList.toggle('hidden');
-    });
-    </script>
+        <!-- Toggle Script -->
+        <script>
+          document
+            .getElementById("menuToggle")
+            .addEventListener("click", function () {
+              const mobileMenu = document.getElementById("mobileMenu");
+              mobileMenu.classList.toggle("hidden");
+            });
+        </script>
+      </div>
+    </header>
+    <!-- header ends here -->
 
-</div>
-</header> 
-<!-- header ends here -->
-
-<!-- content starts here -->
-<content> 
-<div>
-    <div>
-        <h1>
-            Get <span>360°</span> views of your <span>Flooring</span>
-        </h1>
-        <p>In the competitive tile, flooring, and quartz industry, capturing your customers' attention and providing them with an immersive product experience is crucial. Our innovative QR code technology and 360-degree views are designed to elevate your product visuals both in-store and on your website, making it easier for customers to make informed decisions.</p>
-        <a href="#">Get a free sample view <img src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202%20(1).svg" alt="right-arrow-box-lite"></a>
-    </div>
-    <div>
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/Rectangle%209.jpg" alt="first section right image">
-    </div>
-</div>
-<div>
-    <div>
-        <h2>Loved By <span>40+ Brands</span></h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry,  the industry's standard dummy o make a type specimen book.</p>
-    </div>
-    <div>
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/download%204.png">
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/download%205.png">
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/grancier-9f8b6556%201.png">
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/lavish-3a55e035%201.png">
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/lioli-171acb9f%201.png">
-        <img src="file:///C:/Users/TLS/Desktop/visualez/media/qutone-dd51456f%201.png">
-    </div>
-</div>
-<div>
-    <div>
-        <h2>Checkout <span>our Demos</span></h2>
-        <p>We help your customers quickly select products with AI-based Aspirational 360° views.</p>
-    </div>
-    <div>
+    <!-- content starts here -->
+    <content>
+      <div>
         <div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p><em>Flooring 360° view</em></p>
-                        <div>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="Flooring">
-                    </div>
-                    <div>
-                        <span>Flooring</span>
-                        <span></span>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <img src="" alt="Tiles">
-                    </div>
-                    <div>
-                        <span>Tiles</span>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <img src="" alt="Carpet">
-                    </div>
-                    <div>
-                        <span>Carpet</span>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <img src="" alt="Quartz">
-                    </div>
-                    <div>
-                        <span>Quartz</span>
-                    </div>
-                </div>
-            </div>
+          <h1>Get <span>360°</span> views of your <span>Flooring</span></h1>
+          <p>
+            In the competitive tile, flooring, and quartz industry, capturing
+            your customers' attention and providing them with an immersive
+            product experience is crucial. Our innovative QR code technology and
+            360-degree views are designed to elevate your product visuals both
+            in-store and on your website, making it easier for customers to make
+            informed decisions.
+          </p>
+          <a href="#"
+            >Get a free sample view
+            <img
+              src="file:///C:/Users/TLS/Desktop/visualez/media/Group%202%20(1).svg"
+              alt="right-arrow-box-lite"
+          /></a>
         </div>
-    </div>
-</div>
+        <div>
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/Rectangle%209.jpg"
+            alt="first section right image"
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Loved By <span>40+ Brands</span></h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry, the industry's standard dummy o make a type specimen book.
+          </p>
+        </div>
+        <div>
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/download%204.png"
+          />
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/download%205.png"
+          />
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/grancier-9f8b6556%201.png"
+          />
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/lavish-3a55e035%201.png"
+          />
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/lioli-171acb9f%201.png"
+          />
+          <img
+            src="file:///C:/Users/TLS/Desktop/visualez/media/qutone-dd51456f%201.png"
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Checkout <span>our Demos</span></h2>
+          <p>
+            We help your customers quickly select products with AI-based
+            Aspirational 360° views.
+          </p>
+        </div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <img src="" alt="" />
+                <div>
+                  <p><em>Flooring 360° view</em></p>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div>
+              <div>
+                <div>
+                  <img src="" alt="Flooring" />
+                </div>
+                <div>
+                  <span>Flooring</span>
+                  <span></span>
+                </div>
+              </div>
 
-</content>
-<!-- content ends here -->
+              <div>
+                <div>
+                  <img src="" alt="Tiles" />
+                </div>
+                <div>
+                  <span>Tiles</span>
+                </div>
+              </div>
 
-<!-- footer starts here -->
-<footer>
-</footer>
-<!-- footer ends here -->
-</body>
+              <div>
+                <div>
+                  <img src="" alt="Carpet" />
+                </div>
+                <div>
+                  <span>Carpet</span>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <img src="" alt="Quartz" />
+                </div>
+                <div>
+                  <span>Quartz</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </content>
+    <!-- content ends here -->
+
+    <!-- footer starts here -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Logo and description -->
+          <div class="col-span-1 md:col-span-1">
+            <img
+              src="file:///C:/Users/TLS/Desktop/visualez/media/logo.png"
+              alt="Logo"
+              class="h-10 mb-4"
+            />
+            <p class="text-gray-400 text-sm">
+              Providing innovative 360° views for the flooring industry.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>123 Main Street</li>
+              <li>New York, NY 10001</li>
+              <li>info@visualez.com</li>
+              <li>(123) 456-7890</li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Subscribe</h3>
+            <p class="text-gray-400 mb-2">Stay updated with our latest news</p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900"
+              />
+              <button
+                class="bg-[#3295DC] px-4 py-2 rounded-r-md hover:bg-blue-700 transition"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-600 text-sm">
+            © 2023 VisualEZ. All rights reserved.
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-600 hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-600 hover:text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-600 hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-600 hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+  </body>
 </html>
-
-
